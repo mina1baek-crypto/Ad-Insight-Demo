@@ -6,7 +6,7 @@ import Anthropic from '@anthropic-ai/sdk';
 dotenv.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // 미들웨어
 app.use(cors());
