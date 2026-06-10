@@ -239,3 +239,5 @@ app.listen(PORT, "0.0.0.0", () => {
     console.log('⚠️  Anthropic API not configured - using mock insights');
   }
 });
+
+// test
