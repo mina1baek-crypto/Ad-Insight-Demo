@@ -229,8 +229,10 @@ app.get('/health', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Backend server running at http://localhost:${PORT}`);
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`🚀 Backend server running on port ${PORT}`);
   if (process.env.ANTHROPIC_API_KEY) {
     console.log('✅ Anthropic API configured');
   } else {
