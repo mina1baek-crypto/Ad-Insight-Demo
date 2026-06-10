@@ -22,7 +22,7 @@ function App() {
     setError('')
     
     try {
-      const response = await axios.post('http://localhost:5000/api/analyze', {
+      const response = await axios.post('https://ad-insight-demo-production.up.railway.app/api/analyze', {
         brand: brand.trim()
       })
       
